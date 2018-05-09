@@ -121,3 +121,15 @@ nav {
 .hidden_content {
     display: none;
 }
+
+
+/*** ABOUT PAGE ***/
+.jumbotron-about {
+    background: black url(../img/brendan_sullivan.jpg) no-repeat top right;
+    height: 350px;
+    padding: 0 15px;
+}
+
+.navbar-inverse {
+    margin-bottom: 0px;
+}
