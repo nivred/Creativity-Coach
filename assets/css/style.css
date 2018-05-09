@@ -1,0 +1,123 @@
+body {
+    background-color: #232323;
+    color: #363636;
+}
+h1 strong {
+    color: #d6fb05;
+    /* color: #D9E021;
+    color: #ffff00; */
+}
+h2 {
+    border-bottom: 1px solid #cdcdcd;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+h3 {
+    /* color: #ff6666; */
+    color: #a94442;
+    font-weight: 600;
+}
+p {
+    font-size: 1.5em;
+}
+.btn-black { 
+    color: aliceblue; 
+    background-color: #232323; 
+    border-color: #000000;
+    box-shadow: 2px 2px 2px #363636;
+} 
+.btn-black:hover, 
+.btn-black:focus, 
+.btn-black:active, 
+.btn-black.active, 
+.open .dropdown-toggle.btn-black { 
+color: #D6FB05; 
+background-color: #000000; 
+border-color: #000000; 
+} 
+.btn-black:active, 
+.btn-black.active, 
+.open .dropdown-toggle.btn-black { 
+background-image: none; 
+} 
+.btn-black.disabled, 
+.btn-black[disabled], 
+fieldset[disabled] .btn-black, 
+.btn-black.disabled:hover, 
+.btn-black[disabled]:hover, 
+fieldset[disabled] .btn-black:hover, 
+.btn-black.disabled:focus, 
+.btn-black[disabled]:focus, 
+fieldset[disabled] .btn-black:focus, 
+.btn-black.disabled:active, 
+.btn-black[disabled]:active, 
+fieldset[disabled] .btn-black:active, 
+.btn-black.disabled.active, 
+.btn-black[disabled].active, 
+fieldset[disabled] .btn-black.active { 
+background-color: #232323; 
+border-color: #000000; 
+} 
+.btn-black .badge { 
+color: #232323; 
+background-color: #D6FB05; 
+}
+.container {
+    background-color: #efefef;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    padding: 0 15px;
+}
+.jumbotron {
+    background: url(../img/coach_inner_circle.jpg) no-repeat center left black;
+    background-size: cover;
+    height: 350px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.jumbotron .h1, .jumbotron h1 {
+    color: aliceblue;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-top: 0;
+    text-shadow: 2px 2px 3px black;
+}
+.logo {
+    padding: 20px 0 17px 0;
+    margin: 0;
+    text-align: center;
+}
+.logo-text {
+    padding-left: 40px;
+    text-align: left;
+}
+nav {
+    font-size: 1.3em;
+    height: 50px;
+    position: relative;
+    top: 300px;
+    width: 100%;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: aliceblue;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #d6fb05;
+}
+#mission, #about, #programs, #clients,
+#contact {
+    padding: 10px 40px 20px 40px;
+}
+#mission {
+    background-color: #111111;
+    color: lightgrey;
+}
+#programs {
+    text-align: center;
+}
+.hidden_content {
+    display: none;
+}
