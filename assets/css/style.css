@@ -125,8 +125,10 @@ nav {
     background-color: #111111;
     color: lightgrey;
 }
-#programs {
+.marketing {
     text-align: center;
+}
+#programs {
 }
 .hidden_content {
     display: none;
@@ -146,6 +148,11 @@ nav {
 .navbar-inverse {
     margin-bottom: 0px;
 }
+/*** END ABOUT PAGE ***/
+
+/*** PROGRAMS PAGE ***/
+
+/*** END PROGRAMS PAGE ***/
 
 @media screen and (max-width: 1920px) {
     .logo-text {
