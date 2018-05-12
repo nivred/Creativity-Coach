@@ -234,6 +234,9 @@ blockquote {
 footer {
     font-size: .5em;
 }
+footer.well {
+    margin-bottom: 0;
+}
 
 
 
