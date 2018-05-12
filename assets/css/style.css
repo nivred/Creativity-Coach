@@ -154,6 +154,89 @@ nav {
 
 /*** END PROGRAMS PAGE ***/
 
+
+/*** CLIENTS PAGE ***/
+.nav-tabs>li>a {
+    font-size: 18px;
+}
+
+.tab-content {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.pills {
+    background-color: lightblue;
+    border-radius: 25px;
+    color: steelblue;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 2.2em;
+    margin-right: 5px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+img {
+    box-shadow: 1px 3px 5px #363636; 
+}
+
+.item {
+    height: 250px;
+    margin: 0 auto;
+    padding: 0 10%;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+  }
+
+blockquote {
+    border-left: none;
+    font-family: cursive;
+    font-size: 1.5em;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #aaaaaa;
+    vertical-align: center;
+}
+
+.client {
+    font-size: 2em;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px #888888;
+}
+
+.credit {
+    font-size: 1.3em;
+    color: #686868;
+    line-height: .3em;
+}
+
+.carousel-control {
+    color: #D6FB05;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -30px;
+    opacity: 1;
+}
+.carousel-control .btn-black {
+    font-weight: 900;
+    font-size: 2em;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+
+}
+/*** END CLIENTS PAGE ***/
+
+footer {
+    font-size: .5em;
+}
+
+
+
 @media screen and (max-width: 1920px) {
     .logo-text {
         padding-left: 60px;
