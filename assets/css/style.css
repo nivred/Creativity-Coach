@@ -229,24 +229,205 @@ blockquote {
     background-image: none;
 
 }
-/*** END CLIENTS PAGE ***/
 
+/*** END CLIENTS PAGE ***/
 footer {
     font-size: .5em;
 }
 
 
 
-@media screen and (max-width: 1920px) {
+
+
+/*** X-LARGE SCREEN ***/
+@media only screen and (max-width: 5000px) {
+    body {
+        /* background-color: rgb(0, 0, 255); */
+    }
+    .logo-text {
+        padding-left: 65px;
+        text-align: left;
+    }
+}
+
+/* @media screen and (max-width: 1920px) {
     .logo-text {
         padding-left: 60px;
+    }
+} */
+
+/*** LARGE SCREEN ***/
+@media only screen and (max-width: 1200px) {
+    body {
+        /* background-color: rgb(0, 128, 0); */
+    }
+    .logo-text {
+        padding-left: 38px;
+        text-align: left;
+    }
+    img {
+        height: 170px;
+        width: 255px;
+    }
+}
+
+/* @media screen and (max-width: 1024px) {
+    .logo-text {
+        padding-left: 40px;
+    }
+} */
+
+/*** MEDIUM SCREEN ***/
+@media only screen and (max-width: 992px) {
+    body {
+        /* background-color: rgb(255, 255, 0); */
+    }
+    .jumbotron {
+        background: url(../img/coach_inner_circle.jpg) center center;
+    }
+    .logo {
+        margin-top: 40px;
+        margin-left: 20px;
+        text-align: none;
+    }
+    .logo-image {
+        width: 118px;
+    }
+    .logo-image svg {
+        height: 150px;
+        width: 150px;
+    }
+    .logo-text {
+        margin-top: 15px;
+        padding-left: 0;
+        text-align: left;
+    }
+    nav {
+        width: 100%;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    #programs{
+        color: #fafcaa;
+        font-size: 1.2em;
+        text-align: center;
+        text-shadow: 2px 2px 0px #111111;
+    }
+    #programs h3 {
+        color: aliceblue;
+    }
+    #programs a {
+        text-shadow: none;
+        box-shadow: 2px 2px 3px #111111;
+    }
+    #programs img {
+        display: none;
+    }
+
+    #development {
+        background: url(../img/team_development.jpg) no-repeat center top;
+        background-color: rgba(76, 175, 80, 0.3);
+        background-size: cover;
+        padding: 50px;
+    }
+    #thinking {
+        background: url(../img/thinking_skills.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 50px;
+    }    
+    #ideation {
+        background: url(../img/ideation_sessions.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 50px;
+    }
+}
+
+/*** SMALL SCREEN ***/
+@media only screen and (max-width: 768px) {
+    .jumbotron {
+        margin-top: 50px;
+    }
+    body {
+        /* background-color: rgb(255, 165, 0); */
+    }
+    .logo {
+        margin-top: 160px;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+    }
+    nav ul {
+        background-color: rgb(54, 54, 54, 0.8);
+        text-align: right;
+    }
+    nav ul.navbar-nav {
+        margin: 0;
+    }
+    nav ul.dropdown-menu {
+        background-color: rgb(54, 54, 54, 0.5);
+        text-align: right;
+        font-size: 1em;
+        line-height: 4em;
+    }
+    .navbar-inverse .navbar-collapse, 
+    .navbar-inverse .navbar-form {
+        position: fixed;
+        right: 0;
+        z-index: 100;
+    }
+    .navbar-inverse {
+        margin-bottom: 0px;
+        position: fixed;
+        z-index: 100;
+    }
+    .navbar-nav .open .dropdown-menu>li>a {
+        line-height: 30px;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, 
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #d6fb05;
+    }        
+    #about img {
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #about btn .btn-black {
+        margin: 0 auto;
+    }
+    #coach {
+        height: 662px;
+    }
+}
+
+/*** X-SMALL SCREEN ***/
+@media only screen and (max-width: 576px) {
+    .jumbotron {
+        /* background-image: none; */
+    }
+    body {
+        /* background-color: rgb(255, 0, 0); */
     }
 
 }
 
-@media screen and (max-width: 1024px) {
-    .logo-text {
-        padding-left: 40px;
+/*** XX-SMALL SCREEN ***/
+@media only screen and (max-width: 325px) {
+    .jumbotron {
+        /* background-image: none; */
     }
-
+    body {
+        /* background-color: black; */
+    }
+    .logo-image svg {
+        height: 130px;
+        width: 130px;
+    }
+    .logo-text h1 {
+        font-size: .7em;
+        margin-left:px;
+    }
 }
