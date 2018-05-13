@@ -33,7 +33,7 @@
                             <li><a href="services.html">Other Services</a></li>
                             <li><a href="teachers.html">For Teachers</a></li>
                             <li><a href="novel.html">The Novel</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
+                            <li data-toggle="modal" data-target="#myModal"><a href="#">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -174,6 +174,190 @@
                 </div>
             </div>
         </section>
+
+
+        <div class="container">
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Contact The Coach</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="well well-lg">
+                                <p>If you're interested in obtaining more information about Corporate Creativity Coach, or speaking with Brendan, please feel free to contact us at:</p> 
+                                <p>Phone: 773.463.3143<br>  
+                                Email: info@creativitycoach.net</p>
+        
+                        </div>
+                        <div class="well well-lg">
+                                <form id="my-form" class="form-contact" action="contact-form.php" method="post">
+                                        <div class="form-group">
+                                            <label for="name">Full Name:</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="company">Company:</label>
+                                            <input type="text" class="form-control" id="company">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address">Address:</label>
+                                            <input type="text" class="form-control" id="address">
+                                        </div>
+
+                                        <div class="input-group">
+                                            <div class="form-group city" >
+                                                <label for="city">City:</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+                                            <div class="form-group state">
+                                                <label for="state">State</label>
+                                                <select class="form-control" name="state" id="state">
+                                                    <option value="AL">AL</option>
+                                                    <option value="AK">AK</option>
+                                                    <option value="AR">AR</option>	
+                                                    <option value="AZ">AZ</option>
+                                                    <option value="CA">CA</option>
+                                                    <option value="CO">CO</option>
+                                                    <option value="CT">CT</option>
+                                                    <option value="DC">DC</option>
+                                                    <option value="DE">DE</option>
+                                                    <option value="FL">FL</option>
+                                                    <option value="GA">GA</option>
+                                                    <option value="HI">HI</option>
+                                                    <option value="IA">IA</option>	
+                                                    <option value="ID">ID</option>
+                                                    <option value="IL">IL</option>
+                                                    <option value="IN">IN</option>
+                                                    <option value="KS">KS</option>
+                                                    <option value="KY">KY</option>
+                                                    <option value="LA">LA</option>
+                                                    <option value="MA">MA</option>
+                                                    <option value="MD">MD</option>
+                                                    <option value="ME">ME</option>
+                                                    <option value="MI">MI</option>
+                                                    <option value="MN">MN</option>
+                                                    <option value="MO">MO</option>	
+                                                    <option value="MS">MS</option>
+                                                    <option value="MT">MT</option>
+                                                    <option value="NC">NC</option>
+                                                    <option value="NE">NE</option>
+                                                    <option value="NH">NH</option>
+                                                    <option value="NJ">NJ</option>
+                                                    <option value="NM">NM</option>
+                                                    <option value="NV">NV</option>
+                                                    <option value="NY">NY</option>
+                                                    <option value="ND">ND</option>
+                                                    <option value="OH">OH</option>
+                                                    <option value="OK">OK</option>
+                                                    <option value="OR">OR</option>
+                                                    <option value="PA">PA</option>
+                                                    <option value="RI">RI</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SD">SD</option>
+                                                    <option value="TN">TN</option>
+                                                    <option value="TX">TX</option>
+                                                    <option value="UT">UT</option>
+                                                    <option value="VT">VT</option>
+                                                    <option value="VA">VA</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="WI">WI</option>	
+                                                    <option value="WV">WV</option>
+                                                    <option value="WY">WY</option>
+                                                </select>		
+                                            </div>
+                                            <div class="form-group zip">
+                                                <label for="zip">Zip:</label>
+                                                <input type="text" class="form-control" id="zip">
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <div class="form-group phone">
+                                                <label for="phone">Phone:</label>
+                                                <input type="tel" class="form-control" id="phone">
+                                            </div>
+                                            <div class="form-group email">
+                                                <label for="email">Email:</label>
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <div class="form-group org">
+                                                <label for="org">Organization Type:</label>
+                                                <select name="org" class="form-control" id="org">
+                                                    <option value=" ">-- Select Type --</option>
+                                                    <option value="Corporation">Corporation</option>
+                                                    <option value="Non-Profit Organization">Non-Profit</option>
+                                                    <option value="School">School</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>            
+                                            <div class="form-group time">
+                                                <label for="time">Best time to call:</label>
+                                                <select name="time" class="form-control" id="time">
+                                                    <option value=" ">-- Select Time --</option>
+                                                    <option value="Day">Day</option>
+                                                    <option value="Evening">Evening</option>
+                                                    <option value="Weekend">Weekend</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ref">How did you hear about us?:</label>
+                                            <input type="text" class="form-control" id="ref">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">How can I help?:</label>
+                                            <textarea type="text" class="form-control" id="message"></textarea>
+                                        </div>
+                                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                                <button type="button" class="btn btn-danger btn-lg pull-right" data-dismiss="modal">Cancel</button>
+                                    </form>
+                            </div>
+
+                            <!-- <ul class="form-input">
+                                <li>
+                                    <i class="fas fa-user"></i>
+                                    <label for="Name">Name</label>
+                                    <input id="form-name" type="text" name="name" placeholder="Full Name">
+                                </li>
+                                <li>
+                                    <i class="fas fa-at"></i>
+                                    <label for="email">Email</label>
+                                    <input id="form-email" type="email" name="email" placeholder="example@email.com">
+                                </li>
+                                <li>
+                                    <i class="fas fa-info-circle"></i>
+                                    <label for="subject">Subject</label>
+                                    <input id="form-subject" type="text" name="subject" placeholder="Reason for contact">
+                                </li>
+                            </ul>
+                            <ul class="form-textarea">
+                                <li>
+                                    <i class="fas fa-comment"></i>
+                                    <label for="message">Message</label>
+                                    <textarea id="form-message" name="message" cols="30" rows="6" placeholder="Write your message"></textarea>
+                                    <button id="form-submit" class="btn g-recaptcha" type="submit" name="submit"><i class="fab fa-telegram-plane"></i> Send Message</button>
+            
+                                </li>
+                                <li class="form-alert"></li>
+                            </ul> -->
+                        </form>
+
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
         
         <footer class="well well-lg col-sm-12 col-md-12 col-lg-12 text-center">
             <p>Copyright &copy; Corporate Creativity Coach <a href="http://dervinmejia.com" target="_blank"> | Built by Dervin Mejia</a></p>
