@@ -6,7 +6,7 @@ body {
 /*** BTN STYLING ***/
 .btn-black { 
     color: aliceblue; 
-    background-color: #232323; 
+    background-color: #232323;
     border-color: #000000;
     box-shadow: 2px 2px 2px #363636;
 }
@@ -239,13 +239,23 @@ blockquote {
     text-align: center;
 }
 .modal-body p {
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
+}
+.modal-body p span {
+    color: cornflowerblue;
+    font-size: 1.25em;
+    font-weight: bold;
 }
 form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+}
+form span {
+    color: red;
+    font-size: 1.20em;
+    font-weight: bold;
 }
 .form-group {
     margin-bottom: 5px;
@@ -279,10 +289,14 @@ form {
 }
 .form-group.org {
     margin-right: 10px;
-    width: 45%;
+    width: 31%;
 }
 .form-group.time {
-    width: 50%;
+    margin-right: 10px;
+    width: 31%;
+}
+.form-group.ref {
+    width: 31%;
 }
 .form-group.submit {
     /* margin-right: 10px; */
