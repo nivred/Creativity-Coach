@@ -301,6 +301,12 @@ form span {
 .form-group.ref {
     width: 31%;
 }
+.alert {
+    color: red;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
 .form-group.submit {
     /* margin-right: 10px; */
     width: 48%;
