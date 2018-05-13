@@ -18,7 +18,7 @@
         $errorEmail = false;
 
         if (empty($name) || empty($email) || empty ($subject) || empty ($message)) {
-            echo "<span class='form-error'>ALL FIELDS REQUIRED</span>";
+            echo "<span class='form-error'>THIS FIELD REQUIRED</span>";
             $errorEmpty = true;
         }
         elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -31,22 +31,22 @@
             $headers = "From: ".$emailFrom;
             $txt = "Submission from: ".$name.".\n\n".
 
-                    "Company: ".$company.".\n".
-                    "Address: ".$address.".\n".
+                    "Company: ".$company."\n".
+                    "Address: ".$address."\n".
                     "City: ".$city.", ".
                     "State: ".$state.", ".
-                    "Zip: ".$zip.", " ".\n\n".
+                    "Zip: ".$zip."\n\n".
 
-                    "Organization Type:".$org.".\n".
-                    "Referred By: ".$ref.".\n\n".
+                    "Organization Type:".$org."\n".
+                    "Referred By: ".$ref."\n\n".
 
-                    "Phone: ".$phone.".\n".
-                    "Available During: ".$time.".\n\n".
+                    "Phone: ".$phone."\n".
+                    "Available During: ".$time."\n\n".
 
-                    "Email: ".$email.".\n".
+                    "Email: ".$email."\n".
 
-                    "Subject ".$subject.".\n".
-                    "Message ".$message.".\n";
+                    "Subject ".$subject."\n".
+                    "Message ".$message."\n";
                  
             mail($mailTo, $subject, $txt, $headers);
             header("Location: index.html");
@@ -58,18 +58,18 @@
 ?>
 
 <script>
-    $("#form-name, #form-email, #form-subject, #form-message").removeClass("input-error");
+    $("#name, #email, #subject, #message").removeClass("input-error");
 
     var errorEmpty = "<?php echo $errorEmpty; ?>";
     var errorEmail = "<?php echo $errorEmail; ?>";
 
     if (errorEmpty == true) {
-        $("#form-name, #form-email, #form-subject, #form-message").addClass("input-error");
+        $("#name, #email, #subject, #message").addClass("input-error");
     }
     if (errorEmail == true) {
-        $("#form-email").addClass("input-error");
+        $("#email").addClass("input-error");
     }
     if (errorEmpty == false && errorEmail == false) {
-        $("#form-name, #form-email, #form-subject, #form-message").val("");
+        $("#name, #email, #subject, #message").val("");
     }
 </script>
