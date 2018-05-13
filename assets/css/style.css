@@ -117,6 +117,12 @@ nav {
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #d6fb05;
 }
+.dropdown-menu {
+    right: 0 !important;
+}
+.dropdown-menu>li>a {
+    font-size: 1.25em;
+}
 #mission, #about, #programs, #clients,
 #contact {
     padding: 10px 40px 20px 40px;
@@ -128,7 +134,13 @@ nav {
 .marketing {
     text-align: center;
 }
-#programs {
+#programs h3 {
+    margin-top: 0;
+}
+#programs img {
+    box-shadow: none;
+    margin-right: 15px;
+    /* display: inline-block; */
 }
 .hidden_content {
     display: none;
@@ -161,10 +173,9 @@ nav {
 }
 
 .tab-content {
-    padding: 10px 20px;
+    padding: 20px 0;
     text-align: center;
 }
-
 .pills {
     background-color: lightblue;
     border-radius: 25px;
@@ -172,15 +183,13 @@ nav {
     font-size: 1.2em;
     font-weight: 600;
     line-height: 2.2em;
-    margin-right: 5px;
+    margin: 0 2px;
     padding: 5px 15px;
     text-align: center;
 }
-
 img {
     box-shadow: 1px 3px 5px #363636; 
 }
-
 .item {
     height: 250px;
     margin: 0 auto;
@@ -188,29 +197,26 @@ img {
     opacity: 1;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
-  }
-
+}
 blockquote {
     border-left: none;
-    font-family: cursive;
     font-size: 1.5em;
-    font-style: italic;
     text-shadow: 1px 1px 1px #aaaaaa;
     vertical-align: center;
 }
-
+.fa {
+    font-size: 1.25em;
+}
 .client {
     font-size: 2em;
     margin-bottom: 0;
     text-shadow: 1px 1px 1px #888888;
 }
-
 .credit {
     font-size: 1.3em;
     color: #686868;
     line-height: .3em;
 }
-
 .carousel-control {
     color: #D6FB05;
     position: absolute;
@@ -237,9 +243,6 @@ footer {
 footer.well {
     margin-bottom: 0;
 }
-
-
-
 
 
 /*** X-LARGE SCREEN ***/
@@ -308,41 +311,42 @@ footer.well {
     nav {
         width: 100%;
     }
+    .dropdown-menu>li>a {
+        font-size: 1em;
+    }
+    
     h3 {
         font-size: 2em;
     }
-    #programs{
-        color: #fafcaa;
-        font-size: 1.2em;
-        text-align: center;
-        text-shadow: 2px 2px 0px #111111;
-    }
-    #programs h3 {
+    .marketing h3 {
         color: aliceblue;
     }
-    #programs a {
+    .marketing a {
         text-shadow: none;
         box-shadow: 2px 2px 3px #111111;
     }
-    #programs img {
+    .marketing img {
         display: none;
     }
-
+    .blurb {
+        color: #ff3300;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 1px 2px 0px #111111;
+        padding: 165px 50px 20px;
+    }
     #development {
         background: url(../img/team_development.jpg) no-repeat center top;
-        background-color: rgba(76, 175, 80, 0.3);
         background-size: cover;
-        padding: 50px;
     }
     #thinking {
         background: url(../img/thinking_skills.jpg) no-repeat center center;
         background-size: cover;
-        padding: 50px;
     }    
     #ideation {
-        background: url(../img/ideation_sessions.jpg) no-repeat center center;
+        background: url(../img/ideation_sessions.jpg) no-repeat center bottom;
         background-size: cover;
-        padding: 50px;
     }
 }
 
@@ -350,9 +354,6 @@ footer.well {
 @media only screen and (max-width: 768px) {
     .jumbotron {
         margin-top: 50px;
-    }
-    body {
-        /* background-color: rgb(255, 165, 0); */
     }
     .logo {
         margin-top: 160px;
@@ -387,6 +388,9 @@ footer.well {
     }
     .navbar-nav .open .dropdown-menu>li>a {
         line-height: 30px;
+     }
+     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #efefef;
     }
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, 
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
@@ -401,8 +405,13 @@ footer.well {
     #about btn .btn-black {
         margin: 0 auto;
     }
-    #coach {
-        height: 662px;
+    #programs img {
+        height: auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #programs h3 {
+        text-align: center;
     }
 }
 
@@ -424,12 +433,15 @@ footer.well {
     body {
         /* background-color: black; */
     }
+    .logo {
+        margin-top: 195px;
+    }
     .logo-image svg {
-        height: 130px;
-        width: 130px;
+        height: 100px;
+        width: 100px;
     }
     .logo-text h1 {
-        font-size: .7em;
-        margin-left:px;
+        font-size: 1.6em;
+        margin-left: -30px;
     }
 }
