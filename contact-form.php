@@ -17,37 +17,20 @@
         $errorEmpty = false;
         $errorEmail = false;
 
-        if (empty($name) || empty($email) || empty ($subject) || empty ($message)) {
-            echo "<span class='form-error'>THIS FIELD REQUIRED</span>";
+        if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+            echo "<span class='alert'>(*)THESE FIELDS ARE REQUIRED</span>";
             $errorEmpty = true;
         }
         elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo "<span class='form-error'>VALID EMAIL REQUIRED</span>";
+            echo "<span class='alert'>VALID EMAIL REQUIRED</span>";
             $errorEmail = true;
         } else {
-            echo "<span class='form-success'>MESSAGE SENT</span>";
+            echo "<span class='success'>MESSAGE SENT, THANK YOU</span>";
 
             $mailTo = "contact@dervinmejia.com";
-            $headers = "From: ".$emailFrom;
-            $txt = "Submission from: ".$name.".\n\n".
-
-                    "Company: ".$company."\n".
-                    "Address: ".$address."\n".
-                    "City: ".$city.", ".
-                    "State: ".$state.", ".
-                    "Zip: ".$zip."\n\n".
-
-                    "Organization Type:".$org."\n".
-                    "Referred By: ".$ref."\n\n".
-
-                    "Phone: ".$phone."\n".
-                    "Available During: ".$time."\n\n".
-
-                    "Email: ".$email."\n".
-
-                    "Subject ".$subject."\n".
-                    "Message ".$message."\n";
-                 
+            $headers = "From: ".$email;
+            $txt = "Submission from: ".$name."\n\n"."Company: ".$company."\n"."Address: ".$address."\n"."City: ".$city.", "."State: ".$state.", "."Zip: ".$zip."\n\n"."Organization Type:".$org."\n"."Referred By: ".$ref."\n\n"."Phone: ".$phone."\n"."Available During: ".$time."\n\n"."Email: ".$email."\n\n"."Message: "."\n".$message;
+            
             mail($mailTo, $subject, $txt, $headers);
             header("Location: index.html");
         }
@@ -70,6 +53,6 @@
         $("#email").addClass("input-error");
     }
     if (errorEmpty == false && errorEmail == false) {
-        $("#name, #email, #subject, #message").val("");
+        // $("#name, #email, #subject, #message").val("");
     }
 </script>

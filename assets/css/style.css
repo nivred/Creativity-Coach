@@ -306,6 +306,14 @@ form span {
     font-size: 1em;
     margin: 0;
     padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.input-error {
+    color: red;
+}
+.success {
+    color: green;
 }
 .form-group.submit {
     /* margin-right: 10px; */

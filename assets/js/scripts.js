@@ -1,6 +1,6 @@
 // FORM VALIDATION & POST METHOD
 $(document).ready(function() {
-    $("form").submit(function(event){
+    $("form").submit(function(event) {
         event.preventDefault();
         var name = $("#name").val();
         var company = $("#company").val();
@@ -29,7 +29,8 @@ $(document).ready(function() {
             time: time,
             ref: ref,
             subject: subject,
-            message: message
+            message: message,
+            submit: submit
         });
     });
 });
