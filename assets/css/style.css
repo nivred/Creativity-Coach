@@ -241,6 +241,26 @@ blockquote {
 .carousel-control.right {
     background-image: none;
 }
+
+/*** NOVEL PAGE ***/
+#novel img {
+    margin-right: 20px;
+}
+blockquote {
+    margin-bottom: 5px;
+    padding: 0;
+}
+#bookstores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.bookstore {
+    box-shadow: none;
+}
+/*** END NOVEL PAGE ***/
+
+
 .modal-header {
     text-align: center;
 }
