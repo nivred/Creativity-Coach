@@ -140,6 +140,8 @@ nav {
     margin-top: 0;
 }
 #programs img {
+    border-bottom: 2px solid #888888;
+    border-right: 1px solid #aaaaaa;
     box-shadow: none;
     margin-right: 15px;
     /* display: inline-block; */
@@ -181,6 +183,7 @@ nav {
 .pills {
     background-color: lightblue;
     border-radius: 25px;
+    box-shadow: 1px 1px 2px grey;
     color: steelblue;
     font-size: 1.2em;
     font-weight: 600;
@@ -335,7 +338,7 @@ textarea.form-control {
 }
 /*** END CLIENTS PAGE ***/
 footer {
-    font-size: .5em;
+    font-size: .7em;
 }
 footer.well {
     margin-bottom: 0;
