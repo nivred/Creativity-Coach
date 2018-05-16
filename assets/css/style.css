@@ -99,9 +99,6 @@ p {
     margin: 0;
     text-align: center;
 }
-.logo svg {
-
-}
 .logo-text {
     padding-left: 40px;
     text-align: left;
@@ -125,16 +122,29 @@ nav {
 .dropdown-menu>li>a {
     font-size: 1.25em;
 }
-#mission, #about, #programs, #clients,
-#contact {
+.pad {
     padding: 10px 40px 20px 40px;
+}
+.no-pad {
+    padding: 0;
 }
 #mission {
     background-color: #111111;
     color: lightgrey;
 }
-.marketing {
+.blurb {
+    font-size: .95em;
     text-align: center;
+}
+.marketing img {
+    height: auto;
+    width: 100%;
+}
+.img-left {
+    margin-right: 20px;
+}
+.img-rigt {
+    margin-left: 20px;
 }
 #programs h3 {
     margin-top: 0;
@@ -153,13 +163,19 @@ nav {
 /*** ABOUT PAGE ***/
 .about-header {
     /* background: linear-gradient(to right, black, #363636) !important; */
-    background-image: url(../img/brendan_sullivan.jpg);
+
+
+    /* background-image: url(../img/brendan_sullivan.jpg);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
     color: aliceblue;
     height: 350px;
-    padding: 0 15px;
+    padding: 0 15px; */
+}
+#about i {
+    font-style: italic;
+    color: #686868;
 }
 .navbar-inverse {
     margin-bottom: 0px;
@@ -172,10 +188,14 @@ nav {
 
 
 /*** CLIENTS PAGE ***/
+#directive {
+    color: #a94442;
+    /* font-size: 1.35em; */
+    text-align: center;
+}
 .nav-tabs>li>a {
     font-size: 18px;
 }
-
 .tab-content {
     padding: 20px 0;
     text-align: center;
@@ -244,19 +264,32 @@ blockquote {
 
 /*** NOVEL PAGE ***/
 #novel img {
-    margin-right: 20px;
+}
+#bookcover, #featured {
+    padding: 0;
+}
+#bookstores {
+    padding-left: 0;
+}
+#bookstores img {
+    height: auto;
+    box-shadow: none;
+    padding-bottom: 7px;
+    width: 100%;
+}
+#bookcover img{
+    height: auto;
+    width: 100%;
+}
+#novel em {
+    font-weight: 700;
 }
 blockquote {
     margin-bottom: 5px;
     padding: 0;
 }
-#bookstores {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.bookstore {
-    box-shadow: none;
+#book-testimonial p {
+    font-size: 1.25em;
 }
 /*** END NOVEL PAGE ***/
 
