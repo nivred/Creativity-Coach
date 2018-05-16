@@ -70,6 +70,7 @@ p {
     font-size: 1.5em;
     line-height: 1.3em;
 }
+em { font-weight: 700; }
 .container {
     background-color: #efefef;
 }
@@ -110,17 +111,31 @@ nav {
     top: 300px;
     width: 100%;
 }
+a {
+    color: #aaaaaa;
+}
 .navbar-inverse .navbar-nav>li>a {
     color: aliceblue;
 }
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover, a:hover {
     color: #d6fb05;
+}
+a:hover {
+    color: #d6fb05;
+    text-decoration: none;
+}
+p a:hover {
+    text-shadow: 2px 2px #111111
 }
 .dropdown-menu {
     right: 0 !important;
 }
 .dropdown-menu>li>a {
     font-size: 1.25em;
+}
+.dropdown-menu>li>a:hover {
+background-color: #232323;
+color: #d6fb05;
 }
 .pad {
     padding: 10px 40px 20px 40px;
@@ -194,7 +209,13 @@ nav {
     text-align: center;
 }
 .nav-tabs>li>a {
+    border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
     font-size: 18px;
+}
+.nav-tabs>li>a:hover {
+    background-color: #363636;
 }
 .tab-content {
     padding: 20px 0;
@@ -281,18 +302,26 @@ blockquote {
     height: auto;
     width: 100%;
 }
-#novel em {
-    font-weight: 700;
-}
-blockquote {
+#novel blockquote {
+    line-height: 1.15em;
     margin-bottom: 5px;
     padding: 0;
 }
 #book-testimonial p {
     font-size: 1.25em;
 }
+#ebooks {
+    background-color: #363636;
+    color: aliceblue;
+    padding: 12px 15px;
+}
 /*** END NOVEL PAGE ***/
 
+/*** TEACHERS PAGE ***/
+blockquote {
+    margin-bottom: 0;
+}
+/*** END NOVEL PAGE ***/
 
 .modal-header {
     text-align: center;
