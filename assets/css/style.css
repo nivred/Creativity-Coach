@@ -155,11 +155,11 @@ color: #d6fb05;
     height: auto;
     width: 100%;
 }
-.img-left {
-    margin-right: 20px;
+.img-right {
+    margin-right: 15px;
 }
 .img-rigt {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 #programs h3 {
     margin-top: 0;
@@ -313,13 +313,16 @@ blockquote {
 #ebooks {
     background-color: #363636;
     color: aliceblue;
-    padding: 12px 15px;
+    margin-top: 15px;
+    padding: 15px 20px;
 }
+#ebooks p { margin: 0; }
 /*** END NOVEL PAGE ***/
 
 /*** TEACHERS PAGE ***/
 blockquote {
     margin-bottom: 0;
+    line-height: 1.25em;
 }
 /*** END NOVEL PAGE ***/
 
