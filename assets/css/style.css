@@ -457,20 +457,24 @@ footer.well {
         padding-left: 38px;
         text-align: left;
     }
-    img {
+    #myNavbar {
+        padding: 0;
+    }
+    .dropdown-menu {
+        left: -65px;
+        /* right: 20px; */
+    }
+    #programs img {
         height: 170px;
         width: 255px;
     }
 }
 
-/* @media screen and (max-width: 1024px) {
-    .logo-text {
-        padding-left: 40px;
-    }
-} */
-
 /*** MEDIUM SCREEN ***/
 @media only screen and (max-width: 992px) {
+    .dropdown-toggle.btn-black {
+        display: block;
+    }
     body {
         /* background-color: rgb(255, 255, 0); */
     }
@@ -541,6 +545,10 @@ footer.well {
 @media only screen and (max-width: 768px) {
     .container {
         padding: 0;
+        margin: 0;
+    }
+    .navbar, .jumbotron {
+        border-radius: 0px;
     }
     .jumbotron {
         margin-top: 50px;
@@ -552,6 +560,9 @@ footer.well {
         float: none;
         position: fixed;
         top: 0;
+    }
+    .collapse .navbar-collapse {
+        display: block;   
     }
     nav ul {
         background-color: rgb(54, 54, 54, 0.8);
@@ -565,6 +576,7 @@ footer.well {
         text-align: right;
         font-size: 1em;
         line-height: 4em;
+        left: -100px;
     }
     .navbar-inverse .navbar-collapse, 
     .navbar-inverse .navbar-form {
@@ -574,6 +586,7 @@ footer.well {
     }
     .navbar-inverse {
         margin-bottom: 0px;
+        padding: 0;
         position: fixed;
         z-index: 100;
     }
@@ -587,6 +600,9 @@ footer.well {
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
         color: #d6fb05;
     }
+    .dropdown-menu{
+        right: 10px;
+    }
     .well {
         padding-left: 0;
         padding-right: 0;
@@ -596,6 +612,7 @@ footer.well {
         padding-left: 15px;
         padding-right: 15px;
     }
+    img { margin-left: 0;  }
     #about img {
         height: auto;
         margin-top: 0;
@@ -667,6 +684,9 @@ footer.well {
     .jumbotron {
         /* background-image: none; */
     }
+    .logo {
+
+    }
     body {
         /* background-color: rgb(255, 0, 0); */
     }
@@ -674,6 +694,10 @@ footer.well {
 
 /*** XX-SMALL SCREEN ***/
 @media only screen and (max-width: 325px) {
+    nav {
+        padding: 0;
+        float: none;
+    }
     .jumbotron {
         /* background-image: none; */
     }
