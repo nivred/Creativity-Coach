@@ -146,6 +146,7 @@ color: #d6fb05;
 #mission {
     background-color: #111111;
     color: lightgrey;
+    text-align: center;
 }
 .blurb {
     font-size: .95em;
@@ -538,13 +539,17 @@ footer.well {
 
 /*** SMALL SCREEN ***/
 @media only screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
     .jumbotron {
         margin-top: 50px;
     }
     .logo {
         margin-top: 160px;
     }
-    nav{
+    nav {
+        float: none;
         position: fixed;
         top: 0;
     }
@@ -581,7 +586,16 @@ footer.well {
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, 
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
         color: #d6fb05;
-    }        
+    }
+    .well {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #mission p, #about p, #programs p, #clients p,
+    #services p, #teachers p, #novel p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     #about img {
         height: auto;
         margin-top: 0;
@@ -598,6 +612,53 @@ footer.well {
     }
     #programs h3 {
         text-align: center;
+    }
+    #clients .nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #testimony {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .item, blockquote {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .carousel-inner {
+        height: 345px;
+    }
+    .carousel-control {
+        bottom: 0;
+        vertical-align: bottom;
+        height: 75px;
+        margin-top: 0;
+    }
+    .carousel-control.left,
+    .carousel-control.right {
+        height: 75px;
+        vertical-align: bottom;
+    }
+    #bookstores {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #bookstores a img {
+        height: auto;
+        width: 110%;
+    }
+    #bookcover {
+        margin-bottom: 20px;
+    }
+    #ebooks {
+        margin-bottom: 20px;
+    }
+    #novel h3 {
+        font-size: 3em;
     }
 }
 
