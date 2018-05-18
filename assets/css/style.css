@@ -75,6 +75,7 @@ em { font-weight: 700; }
     background-color: #efefef;
 }
 .container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0;
     padding: 0 15px;
 }
 .jumbotron {
@@ -547,61 +548,32 @@ footer.well {
         padding: 0;
         margin: 0;
     }
-    .navbar, .jumbotron {
+    .navbar {
         border-radius: 0px;
-    }
-    .jumbotron {
-        margin-top: 50px;
-    }
-    .logo {
-        margin-top: 160px;
     }
     nav {
         float: none;
         position: fixed;
         top: 0;
     }
-    .collapse .navbar-collapse {
-        display: block;   
-    }
-    nav ul {
-        background-color: rgb(54, 54, 54, 0.8);
-        text-align: right;
-    }
-    nav ul.navbar-nav {
-        margin: 0;
-    }
     nav ul.dropdown-menu {
         background-color: rgb(54, 54, 54, 0.5);
-        text-align: right;
         font-size: 1em;
         line-height: 4em;
         left: -100px;
     }
-    .navbar-inverse .navbar-collapse, 
-    .navbar-inverse .navbar-form {
-        position: fixed;
-        right: 0;
-        z-index: 100;
-    }
-    .navbar-inverse {
-        margin-bottom: 0px;
-        padding: 0;
-        position: fixed;
-        z-index: 100;
-    }
-    .navbar-nav .open .dropdown-menu>li>a {
-        line-height: 30px;
-     }
-     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    .dropdown-menu>li>a {
         color: #efefef;
     }
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, 
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    .dropdown-menu>li>a:focus, 
+    .dropdown-menu>li>a:hover {
         color: #d6fb05;
     }
-    .dropdown-menu{
-        right: 10px;
+    .jumbotron {
+        margin-top: 50px;
+    }
+    .logo {
+        margin-top: 160px;
     }
     .well {
         padding-left: 0;
