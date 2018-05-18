@@ -546,15 +546,16 @@ footer.well {
 @media only screen and (max-width: 768px) {
     .container {
         padding: 0;
-        margin: 0;
+        margin-left: -20;
+        margin-right: -20;
     }
     .navbar {
         border-radius: 0px;
     }
     nav {
-        float: none;
         position: fixed;
         top: 0;
+        z-index: 100;
     }
     nav ul.dropdown-menu {
         background-color: rgb(54, 54, 54, 0.5);
@@ -569,11 +570,16 @@ footer.well {
     .dropdown-menu>li>a:hover {
         color: #d6fb05;
     }
+    .navbar-nav {
+        margin: 0;
+    }
     .jumbotron {
         margin-top: 50px;
     }
     .logo {
+        display: inline-block;
         margin-top: 160px;
+        margin-left: 0;
     }
     .well {
         padding-left: 0;
@@ -651,17 +657,19 @@ footer.well {
     }
 }
 
-/*** X-SMALL SCREEN ***/
-@media only screen and (max-width: 576px) {
-    .jumbotron {
-        /* background-image: none; */
+@media only screen and (max-width: 600px) {
+    .navbar { padding-right: 0; }
+    .navbar-collapse {
+        background-color: rgb(54, 54, 54, 0.5);
     }
-    .logo {
+}
 
+/*** X-SMALL SCREEN ***/
+@media only screen and (max-width: 480px) {
+    .carousel-control {
+        top: 80%;
     }
-    body {
-        /* background-color: rgb(255, 0, 0); */
-    }
+
 }
 
 /*** XX-SMALL SCREEN ***/
@@ -669,12 +677,6 @@ footer.well {
     nav {
         padding: 0;
         float: none;
-    }
-    .jumbotron {
-        /* background-image: none; */
-    }
-    body {
-        /* background-color: black; */
     }
     .logo {
         margin-top: 195px;
@@ -686,5 +688,8 @@ footer.well {
     .logo-text h1 {
         font-size: 1.6em;
         margin-left: -30px;
+    }
+    #ideation {
+        background-position: left;
     }
 }
