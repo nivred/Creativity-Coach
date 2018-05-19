@@ -210,7 +210,7 @@ nav {
     top: 300px;
     width: 100%;
 }
-a { color: slategrey; }
+a { color: slategrey; font-weight: 700; }
 
 a:hover {
     color: orangered;
@@ -262,6 +262,7 @@ color: #d6fb05;
 .business-card .logo-bc { margin: 150px 0 0 25px; }
 
 /*** ABOUT PAGE ***/
+
 /* .about-header {
     background-image: url(../img/about2.jpg);
     background-position-x: 50%;
@@ -272,6 +273,9 @@ color: #d6fb05;
     height: 350px;
     padding: 0 15px;
 } */
+
+.headshot { width: 420px; }
+
 #about i {
     color: #686868;
     font-style: italic;
@@ -292,8 +296,7 @@ color: #d6fb05;
 /*** END PROGRAMS PAGE ***/
 
 /*** CLIENTS PAGE ***/
-#directive {
-    color: #a94442;
+#clients {
     text-align: center;
 }
 .nav-tabs>li>a {
@@ -303,23 +306,29 @@ color: #d6fb05;
     font-size: 18px;
 }
 
-.nav-tabs>li>a:hover { background-color: #363636; }
+.nav-tabs>li>a:hover { 
+    background-color: #363636; 
+    color: #d6fb05; 
+}
+.tab-content { padding: 20px 0; }
 
-.tab-content {
-    padding: 20px 0;
-    text-align: center;
+.tab-pane {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 .pills {
     background-color: lightblue;
     border-radius: 25px;
     box-shadow: 1px 1px 2px grey;
+    display: inline;
     color: steelblue;
     font-size: 1.2em;
     font-weight: 600;
     line-height: 2.2em;
     margin: 0 2px;
     padding: 5px 15px;
-    text-align: center;
 }
 
 img { box-shadow: 1px 3px 5px #363636; }
@@ -349,6 +358,11 @@ blockquote {
     margin-bottom: 0;
     text-shadow: 1px 1px 1px #888888;
 }
+#clients .nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 .credit {
     color: #686868;
     font-size: 1.3em;
@@ -370,6 +384,14 @@ blockquote {
 .carousel-control.left,
 .carousel-control.right {
     background-image: none;
+}
+.carousel-indicators {
+    margin-left: -30.5%;
+}
+.carousel-indicators li {
+    background-color: #aaaaaa;
+    border-color: #aaaaaa;
+
 }
 /*** END CLIENTS ***/
 
@@ -492,6 +514,9 @@ blockquote {
         background: url(../img/ideation_sessions.jpg) no-repeat center bottom;
         background-size: cover;
     }
+
+    .headshot { width: 335px; }
+
 }
 
 /*** SMALL SCREEN ***/
@@ -509,12 +534,6 @@ blockquote {
         top: 0;
         z-index: 100;
     }
-    nav ul.dropdown-menu {
-        background-color: rgb(54, 54, 54, 0.5);
-        font-size: 1em;
-        line-height: 4em;
-        left: -100px;
-    }
 
     .dropdown-menu>li>a { color: #efefef; }
 
@@ -522,6 +541,8 @@ blockquote {
     .dropdown-menu>li>a:hover {
         color: #d6fb05;
     }
+    .navbar-collapse { background-color: rgb(54, 54, 54, 0.5); }
+
     .navbar-nav { margin: 0; }
 
     .jumbotron { margin-top: 50px; }
@@ -549,7 +570,7 @@ blockquote {
         margin-bottom: 20px;
         width: 100%;
     }
-
+    
     #about btn .btn-black { margin: 0 auto; }
 
     #programs img {
@@ -560,11 +581,6 @@ blockquote {
 
     #programs h3 { text-align: center; }
 
-    #clients .nav {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
     #testimony {
         margin-left: 0;
         margin-right: 0;
@@ -608,7 +624,15 @@ blockquote {
 @media only screen and (max-width: 600px) {
     .navbar { padding-right: 0; }
 
-    .navbar-collapse { background-color: rgb(54, 54, 54, 0.5); }
+
+    /* nav ul.dropdown-menu {
+        background-color: rgb(54, 54, 54, 0.5);
+        font-size: 1em;
+        line-height: 4em;
+        left: -100px;
+    } */
+
+
 }
 
 /*** X-SMALL SCREEN ***/
