@@ -14,7 +14,7 @@ h2 {
     text-align: center;
 }
 h3 {
-    color: #a94442;
+    color: #efefef;
     font-size: 1.4;
     font-weight: 600;
 }
@@ -235,13 +235,21 @@ color: #d6fb05;
 /*** INDEX PAGE ***/
 #mission {
     background-color: #111111;
-    color: lightgrey;
+    color: #efefef;
     text-align: center;
 }
 .blurb {
     font-size: .95em;
     text-align: center;
 }
+.panel { padding: 10px; }
+
+.panel-default>.panel-heading{
+    background-color: #111111;
+    padding: 1px 0; }
+
+.panel-body { padding: 15px 0 0; }
+
 .marketing img {
     height: auto;
     width: 100%;
@@ -331,7 +339,7 @@ color: #d6fb05;
     padding: 5px 15px;
 }
 
-img { box-shadow: 1px 3px 5px #363636; }
+/* img { box-shadow: 1px 3px 5px #363636; } */
 
 .item {
     height: 250px;
@@ -386,12 +394,11 @@ blockquote {
     background-image: none;
 }
 .carousel-indicators {
-    margin-left: -30.5%;
+    margin-left: -31.25%;
 }
 .carousel-indicators li {
     background-color: #aaaaaa;
     border-color: #aaaaaa;
-
 }
 /*** END CLIENTS ***/
 
@@ -459,14 +466,12 @@ blockquote {
 @media only screen and (max-width: 992px) {
     .dropdown-toggle.btn-black { display: block; }
 
-    .jumbotron {
-        background: url(../img/coach_inner_circle.jpg) center center;
-    }
     .logo {
         margin-top: 40px;
         margin-left: 20px;
         text-align: none;
     }
+
     .logo-image { width: 118px; }
 
     .logo-image svg {
@@ -485,22 +490,32 @@ blockquote {
     h3 { text-align: center; }
 
     .marketing h3 {
-        color: aliceblue;
-        font-size: 2.5em;
+        color: #ffffff;
+        font-size: 2.75em;
     }
     .marketing a {
         text-shadow: none;
         box-shadow: 2px 2px 3px #111111;
     }
+
     .marketing img { display: none; }
 
+    .panel-default>.panel-heading { 
+        background: transparent; 
+        border: none;
+    }
+    .panel-body {
+        background-color: rgb(54, 54, 54, 0.5);
+        color: #ffffff;
+        padding: 15px 60px;
+    }
     .blurb {
         color: #ff3300;
         font-size: 1.2em;
         font-weight: bold;
         text-align: center;
         text-shadow: 1px 2px 0px #111111;
-        padding: 165px 50px 20px;
+        padding: 165px 0 0;
     }
     #development {
         background: url(../img/team_development.jpg) no-repeat center top;
@@ -511,7 +526,7 @@ blockquote {
         background-size: cover;
     }    
     #ideation {
-        background: url(../img/ideation_sessions.jpg) no-repeat center bottom;
+        background: url(../img/ideation_sessions.jpg) no-repeat left bottom;
         background-size: cover;
     }
 
@@ -541,6 +556,7 @@ blockquote {
     .dropdown-menu>li>a:hover {
         color: #d6fb05;
     }
+   
     .navbar-collapse { background-color: rgb(54, 54, 54, 0.5); }
 
     .navbar-nav { margin: 0; }
