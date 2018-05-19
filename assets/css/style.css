@@ -79,8 +79,6 @@ em { font-weight: 700; }
     padding: 0 15px;
 }
 .jumbotron {
-    background: url(../img/coach_inner_circle.jpg) no-repeat center left;
-    background-size: cover;
     height: 350px;
     margin-bottom: 15px;
     padding: 0;
@@ -93,7 +91,7 @@ em { font-weight: 700; }
     text-shadow: 2px 2px 3px black;
 }
 .home-header {
-    background: url(../img/coach_inner_circle.jpg) no-repeat center left;
+    background: url(../img/coach_inner_circle.jpg) no-repeat center;
     background-size: cover;
 }
 .logo {
@@ -176,19 +174,28 @@ color: #d6fb05;
 .hidden_content {
     display: none;
 }
-
+.business-card {
+    background: url(../img/business-card.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.business-card .logo-bc {
+    margin: 150px 0 0 25px;
+}
 /*** ABOUT PAGE ***/
 .about-header {
     /* background: linear-gradient(to right, black, #363636) !important; */
 
 
-    /* background-image: url(../img/brendan_sullivan.jpg);
-    background-position: top right;
+    background-image: url(../img/about2.jpg);
+    background-position-x: 50%;
+    background-position-y: 25%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     color: aliceblue;
     height: 350px;
-    padding: 0 15px; */
+    padding: 0 15px;
 }
 #about i {
     font-style: italic;
