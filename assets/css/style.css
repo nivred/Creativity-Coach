@@ -14,9 +14,11 @@ h2 {
     text-align: center;
 }
 h3 {
-    color: #efefef;
+    /* color: #620909; */
+    color: crimson;
     font-size: 1.4;
-    font-weight: 600;
+    font-weight: 500;
+    /* text-shadow: 1px 1px #232323; */
 }
 p {
     font-size: 1.5em;
@@ -246,7 +248,11 @@ color: #d6fb05;
 
 .panel-default>.panel-heading{
     background-color: #111111;
-    padding: 1px 0; }
+    padding: 1px 0; 
+}
+.panel-default>.panel-heading h3{
+    color: #ffffff;
+}
 
 .panel-body { padding: 15px 0 0; }
 
@@ -260,6 +266,15 @@ color: #d6fb05;
 /*** END INDEX PAGE ***/
 
 .hidden_content { display: none; }
+
+.index-about img {
+    border-radius: 50%;
+}
+.coaching {
+    background: url(../img/coaching.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 90px 0;
+}
 
 .business-card {
     background: url(../img/business-card.jpg) no-repeat center center;
