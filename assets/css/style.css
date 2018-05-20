@@ -522,7 +522,6 @@ blockquote {
         text-shadow: none;
         box-shadow: 2px 2px 3px #111111;
     }
-
     .marketing img { display: none; }
 
     .panel-default>.panel-heading { 
@@ -602,7 +601,12 @@ blockquote {
         padding-left: 15px;
         padding-right: 15px;
     }
-
+    /* .client-list img {
+        height: 75px;
+        margin: 0 10px;
+        padding: 0;
+        width: 75px;
+    } */
     img { margin-left: 0;  }
 
     #about img {
@@ -665,7 +669,12 @@ blockquote {
 @media only screen and (max-width: 600px) {
     .navbar { padding-right: 0; }
 
-
+    .client-list img {
+        height: 90px;
+        margin: 0 10px;
+        padding: 0;
+        width: 90px;
+    }
     /* nav ul.dropdown-menu {
         background-color: rgb(54, 54, 54, 0.5);
         font-size: 1em;
@@ -679,7 +688,14 @@ blockquote {
 /*** X-SMALL SCREEN ***/
 @media only screen and (max-width: 480px) {
     .carousel-control { top: 80%; }
+    .client-list img {
+        height: 75px;
+        margin: 0 10px;
+        padding: 0;
+        width: 75px;
+    }
 }
+
 
 /*** XX-SMALL SCREEN ***/
 @media only screen and (max-width: 325px) {
@@ -699,4 +715,11 @@ blockquote {
     }
 
     #ideation { background-position: left; }
+
+    .client-list img {
+        height: 60px;
+        margin: 0 10px;
+        padding: 0;
+        width: 60px;
+    }
 }
