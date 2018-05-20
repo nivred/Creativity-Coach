@@ -236,7 +236,7 @@ color: #d6fb05;
 
 /*** INDEX PAGE ***/
 #mission {
-    background-color: #111111;
+    background-color: #21202c;
     color: #efefef;
     text-align: center;
 }
@@ -247,11 +247,13 @@ color: #d6fb05;
 .panel { padding: 10px; }
 
 .panel-default>.panel-heading{
-    background-color: #111111;
+    background-color: #21202c;
     padding: 1px 0; 
 }
 .panel-default>.panel-heading h3{
     color: #ffffff;
+    margin: 0;
+    padding:15px;
 }
 
 .panel-body { padding: 15px 0 0; }
@@ -270,12 +272,20 @@ color: #d6fb05;
 .index-about img {
     border-radius: 50%;
 }
+.client-list {
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.client-list img {
+    padding: 0 15px;
+}
 .coaching {
     background: url(../img/coaching.jpg) no-repeat center center;
     background-size: cover;
     padding: 90px 0;
 }
-
 .business-card {
     background: url(../img/business-card.jpg) no-repeat center center;
     background-size: cover;
