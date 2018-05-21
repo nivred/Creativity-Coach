@@ -138,7 +138,7 @@ textarea.form-control {
 }
 .btn-group-lg>.btn, .btn-lg {
     float: none;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
     padding: 2% 15%;
 }
 /*** END MODAL ***/
@@ -271,10 +271,9 @@ color: #d6fb05;
     padding-left: 30%;
     text-align: left;
 }
-/*** END INDEX PAGE ***/
-
-/* .hidden_content { display: none; } */
-
+.list-group-item h4 {
+    margin: 0;
+}
 
 .client-list {
     background-color: #ffffff;
@@ -285,7 +284,11 @@ color: #d6fb05;
 .client-list img {
     padding: 0 15px;
 }
-.coaching {
+a.list-group-item:hover {
+    background: #232323;
+    color: #d6fb05;
+}
+/* .coaching {
     background: url(../img/coaching.jpg) no-repeat center center;
     background-size: cover;
     padding: 90px 0;
@@ -296,7 +299,8 @@ color: #d6fb05;
     height: 600px;
     width: 100%;
 }
-.business-card .logo-bc { margin: 150px 0 0 25px; }
+.business-card .logo-bc { margin: 150px 0 0 25px; } */
+/*** END INDEX PAGE ***/
 
 /*** ABOUT PAGE ***/
 
@@ -367,9 +371,6 @@ color: #d6fb05;
     margin: 0 2px;
     padding: 5px 15px;
 }
-
-/* img { box-shadow: 1px 3px 5px #363636; } */
-
 .item {
     height: 250px;
     margin: 0 auto;
