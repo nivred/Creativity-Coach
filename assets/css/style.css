@@ -15,9 +15,9 @@ h2 {
 }
 h3 {
     /* color: #620909; */
-    color: crimson;
+    color: #888888;
     font-size: 1.4;
-    font-weight: 500;
+    font-weight: 600;
     /* text-shadow: 1px 1px #232323; */
 }
 p {
@@ -43,6 +43,10 @@ em { font-weight: 700; }
 .pad { padding: 10px 40px 20px 40px; }
 
 .no-pad { padding: 0; }
+
+.img-right { margin-right: 15px; }
+
+.img-rigt { margin-left: 15px; }
 
 footer { font-size: .7em; }
 
@@ -236,7 +240,7 @@ color: #d6fb05;
 
 /*** INDEX PAGE ***/
 #mission {
-    background-color: #21202c;
+    background: linear-gradient(to top, #111111, #363636);
     color: #efefef;
     text-align: center;
 }
@@ -247,7 +251,7 @@ color: #d6fb05;
 .panel { padding: 10px; }
 
 .panel-default>.panel-heading{
-    background-color: #21202c;
+    background: linear-gradient(to top, #111111, #363636);
     padding: 1px 0; 
 }
 .panel-default>.panel-heading h3{
@@ -262,16 +266,16 @@ color: #d6fb05;
     height: auto;
     width: 100%;
 }
-.img-right { margin-right: 15px; }
 
-.img-rigt { margin-left: 15px; }
+.index-services, .index-teachers {
+    padding-left: 30%;
+    text-align: left;
+}
 /*** END INDEX PAGE ***/
 
-.hidden_content { display: none; }
+/* .hidden_content { display: none; } */
 
-.index-about img {
-    border-radius: 50%;
-}
+
 .client-list {
     background-color: #ffffff;
     display: flex;
