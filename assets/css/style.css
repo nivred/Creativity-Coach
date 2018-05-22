@@ -14,11 +14,9 @@ h2 {
     text-align: center;
 }
 h3 {
-    /* color: #620909; */
     color: #888888;
     font-size: 1.4;
     font-weight: 600;
-    /* text-shadow: 1px 1px #232323; */
 }
 p {
     font-size: 1.5em;
@@ -262,11 +260,10 @@ color: #d6fb05;
 
 .panel-body { padding: 15px 0 0; }
 
-.marketing img {
+#index-programs img {
     height: auto;
     width: 100%;
 }
-
 .index-services, .index-teachers {
     padding-left: 30%;
     text-align: left;
@@ -274,12 +271,14 @@ color: #d6fb05;
 .list-group-item h4 {
     margin: 0;
 }
-
+#index-clients p {
+    text-align: center;
+}
 .client-list {
     background-color: #ffffff;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .client-list img {
     padding: 0 15px;
@@ -287,17 +286,6 @@ color: #d6fb05;
 a.list-group-item:hover {
     background: #232323;
     color: #d6fb05;
-}
-/* .coaching {
-    background: url(../img/coaching.jpg) no-repeat center center;
-    background-size: cover;
-    padding: 90px 0;
-}
-.business-card {
-    background: url(../img/business-card.jpg) no-repeat center center;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
 }
 .business-card .logo-bc { margin: 150px 0 0 25px; } */
 /*** END INDEX PAGE ***/
@@ -513,21 +501,22 @@ blockquote {
         padding-left: 5px;
         text-align: left;
     }
+
     nav { width: 100%; }
 
     .dropdown-menu>li>a { font-size: 1em; }
     
     h3 { text-align: center; }
 
-    .marketing h3 {
+    #index-programs h3 {
         color: #ffffff;
         font-size: 2.75em;
     }
-    .marketing a {
+    #index-programs a {
         text-shadow: none;
         box-shadow: 2px 2px 3px #111111;
     }
-    .marketing img { display: none; }
+    #index-programs img { display: none; }
 
     .panel-default>.panel-heading { 
         background: transparent; 
@@ -558,9 +547,19 @@ blockquote {
         background: url(../img/ideation_sessions.jpg) no-repeat left bottom;
         background-size: cover;
     }
+    #index-services, #index-teachers {
+        padding: 0;
+    }
+    #index-services .panel-body, #index-teachers .panel-body {
+        background-color: inherit;
+        color: #686868;
+        font-weight: normal;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-shadow: none;
+    }
 
     .headshot { width: 335px; }
-
 }
 
 /*** SMALL SCREEN ***/
@@ -680,14 +679,10 @@ blockquote {
         padding: 0;
         width: 90px;
     }
-    /* nav ul.dropdown-menu {
-        background-color: rgb(54, 54, 54, 0.5);
-        font-size: 1em;
-        line-height: 4em;
-        left: -100px;
-    } */
-
-
+    #index-services .panel-body, #index-teachers .panel-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /*** X-SMALL SCREEN ***/
