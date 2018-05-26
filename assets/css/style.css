@@ -530,7 +530,7 @@ blockquote {
         font-weight: bold;
         text-align: center;
         text-shadow: 1px 2px 0px #111111;
-        padding: 165px 0 0;
+        padding: 200px 0 0;
     }
     #development {
         background: url(../img/team_development.jpg) no-repeat center top;
@@ -688,6 +688,13 @@ blockquote {
         padding-left: 0;
         padding-right: 0;
     }
+    #index-programs .panel-heading h3 {
+        font-size: 1.8em;
+        padding-bottom: 5px;
+    }
+    p {
+        font-size: .9em;
+    }
 }
 
 /*** X-SMALL SCREEN ***/
@@ -701,15 +708,15 @@ blockquote {
         width: 75px;
     }
     #index-programs .panel-heading h3 {
-        font-size: 2.5em;
+        font-size: 1.6em;
     }
     #index-programs .panel-body {
         padding-left: 20px;
         padding-right: 20px;
     }
-    #index-programs .panel-body p {
+    /* #index-programs .panel-body p {
         font-size: 1.2em;
-    }
+    } */
 
 }
 
