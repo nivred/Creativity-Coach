@@ -272,6 +272,7 @@ color: #d6fb05;
     margin: 0;
 }
 #index-clients p {
+    margin-bottom: 20px;
     text-align: center;
 }
 .client-list {
@@ -519,6 +520,9 @@ blockquote {
         background: transparent; 
         border: none;
     }
+    .panel {
+        margin-bottom: 0;
+    }
     .panel-body {
         background-color: rgb(54, 54, 54, 0.5);
         color: #ffffff;
@@ -598,7 +602,7 @@ blockquote {
         padding-right: 0;
     }
     #index-clients p, #index-teachers p {
-        padding: 10px;
+        padding: 0 10px 10px;
     }
     #mission p, #about p, #programs p, #clients p,
     #services p, #teachers p, #novel p {
@@ -699,8 +703,6 @@ blockquote {
 
 /*** X-SMALL SCREEN ***/
 @media only screen and (max-width: 480px) {
-    .carousel-control { top: 80%; }
-
     .client-list img {
         height: 75px;
         margin: 0 10px;
@@ -714,10 +716,10 @@ blockquote {
         padding-left: 20px;
         padding-right: 20px;
     }
-    /* #index-programs .panel-body p {
-        font-size: 1.2em;
-    } */
-
+    .carousel-inner {
+        height: 430px;
+    }
+    .carousel-control { top: 80%; }
 }
 
 
