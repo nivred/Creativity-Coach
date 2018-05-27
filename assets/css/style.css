@@ -209,6 +209,7 @@ fieldset[disabled] .btn-black.active {
 nav {
     font-size: 1.3em;
     height: 50px;
+    padding: 0;
     position: relative;
     top: 300px;
     width: 100%;
@@ -219,6 +220,7 @@ a:hover {
     color: orangered;
     text-decoration: none;
 }
+.navbar, #myNavbar {padding:0}
 .navbar-inverse .navbar-nav>li>a {
     color: aliceblue;
 }
@@ -470,7 +472,6 @@ blockquote {
         padding-left: 38px;
         text-align: left;
     }
-    #myNavbar { padding: 0; }
 
     .dropdown-menu { left: -65px; }
     
@@ -482,8 +483,6 @@ blockquote {
 
 /*** MEDIUM SCREEN ***/
 @media only screen and (max-width: 992px) {
-    .dropdown-toggle.btn-black { display: block; }
-
     .logo {
         margin-top: 40px;
         margin-left: 20px;
@@ -505,6 +504,8 @@ blockquote {
     nav { width: 100%; }
 
     .dropdown-menu>li>a { font-size: 1em; }
+
+    .dropdown-toggle.btn-black { display: block; }
     
     h3 { text-align: center; }
 
